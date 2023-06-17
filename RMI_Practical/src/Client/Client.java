@@ -1,3 +1,7 @@
+package Client;
+
+import Server.MyFirst;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;
@@ -23,7 +27,7 @@ public class Client {
             myScan.close();
 
         }catch (Exception e){
-            System.err.println("Client Exception "+e.toString());
+            System.err.println("Client.Client Exception "+e.toString());
             e.printStackTrace();
         }
     }
